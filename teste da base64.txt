@@ -1,0 +1,8 @@
+String someString = "...";
+Base64.Decoder decoder = Base64.getDecoder();
+
+try {
+    decoder.decode(someString);
+} catch(IllegalArgumentException iae) {
+    // That string wasn't valid.
+}

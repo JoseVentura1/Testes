@@ -1,0 +1,30 @@
+import java.util.*;
+class GroupStringsByLength
+{
+    public static void main(String s[])
+    {
+        ArrayList<String> input = new ArrayList<String>();
+        input.add("Andreia Prince");
+        input.add("Taina Chaves");
+        input.add("Marina");
+        input.add("Mariana Rocha");
+        input.add("Gustavo Travesso");
+        input.add("Karina Silverio");
+        
+        ArrayList<String> lessThanGroup = new ArrayList<String>();
+        ArrayList<String> equalsGroup = new ArrayList<String>();
+        ArrayList<String> greaterThanGroup = new ArrayList<String>();
+        
+        groupStringsByLength(input, lessThanGroup, equalsGroup, greaterThanGroup);
+        
+        System.out.println("Less Than Group = " + lessThanGroup);
+        System.out.println("Equals Group = " + equalsGroup);
+        System.out.println("Greater Than Group = " + greaterThanGroup);
+
+    }
+
+
+    public static void groupStringsByLength(List<String> input,
+                    List<String> lessThanGroup,
+                    List<String> equalsGroup,
+                    List<String> greaterThanGroup) 
